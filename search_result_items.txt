@@ -1,0 +1,111 @@
+{
+    "name": "S8 Pro Ultra Robot Vacuum and Mop, Auto Drying, Auto Mop Washing, Self Emptying, Self Refilling, Liftable Dual Brush & Sonic Mop, 6000Pa Suction, Obstacle Avoidance(RockDock Ultra Series)",
+    "price": null,
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": null
+}{
+    "name": "Q Revo Robot Vacuum and Mop, Auto-Drying, Auto Mop Washing, Dual Spinning Mops, Auto Mop Lifting, Self-Refilling, Self-Emptying, Reactive Tech Obstacle Avoidance, 5500Pa Suction, Black",
+    "price": null,
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": null
+}{
+    "name": "Dyad Pro Wet and Dry Vacuum Cleaner with 17000Pa Intense Power Suction, Vanquish Wet and Dry Messes with DyadPower, Self-Cleaning & Drying System, Auto Cleaning Solution Dispenser",
+    "price": null,
+    "no_of_ratings": "4.1 out of 5 stars",
+    "offers": null
+}{
+    "name": "AI Ultra Voice Control Robot Vacuum with Matrix Clean Navigation, Home Mapping, 60-Day Capacity, Self-Empty Base for Homes with Pets, Carpet & Hard Floors (Silver/Black)",
+    "price": "$479.00",
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": "Overall Pick"
+}{
+    "name": "Official Roborock Multi-Surface Floor Cleaning Solution, Dilution Ratio 1:300, Compatible with Ultra, All Roborock Robot Vacuums with Mopping and Wet and Dry Vacuum, 16.2 oz, Concentrate",
+    "price": null,
+    "no_of_ratings": "4.4 out of 5 stars",
+    "offers": null
+}{
+    "name": "Robot Vacuum and Mop Combo, LiDAR Navigation, L9000 Robotic Vacuum Cleaner, 4000Pa Suction, 150Mins Max, Smart Mapping, 14 No-go Zones, Good for Pet Hair, Carpet, Hard Floor, White",
+    "price": "$259.99",
+    "no_of_ratings": "4.4 out of 5 stars",
+    "offers": null
+}{
+    "name": "Q7 Max+ Robot Vacuum Cleaner, Hands-Free Cleaning for up to 7 Weeks, Robotic Vacuum with APP-Controlled Mopping, 4200Pa Suction, No-Mop&No-Go Zones, 180mins Runtime",
+    "price": null,
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": null
+}{
+    "name": "AV2501S AI Ultra Robot Vacuum, with Matrix Clean, Home Mapping, 30-Day Capacity HEPA Bagless Self Empty Base, Perfect for Pet Hair, Wifi, Dark Grey",
+    "price": "$434.99",
+    "no_of_ratings": "4.4 out of 5 stars",
+    "offers": null
+}{
+    "name": "Robot Vacuum and Mop Combo, Self-Emptying, 60-Day Capacity, Home Mapping, Schedule, Wi-Fi/App/Alexa/Remote, 180mins Runtime, T20+ Robotic Vacuum Cleaner for Pet, Hard Floors, Carpet",
+    "price": "$499.99",
+    "no_of_ratings": "4.4 out of 5 stars",
+    "offers": null
+}{
+    "name": "Robot Vacuum Cleaner with 3000Pa Cyclone Suction, APP/Voice/Remote Control, Automatic Self-Charging Robotic Vacuum, Scheduled Cleaning, Ideal for Pet Hair, Hard Floor, Low Carpet",
+    "price": "$98.98",
+    "no_of_ratings": "4.2 out of 5 stars",
+    "offers": "Best Seller"
+}{
+    "name": "22 PACK S7 Accessories Kit Compatible with Roborock S7, S7+, S7 MaxV, S7 MaxV Plus, 2 Main Brush, 4 Mop Cloth, 6 Filter, 8 Side Brush",
+    "price": "$23.99",
+    "no_of_ratings": "4.5 out of 5 stars",
+    "offers": null
+}{
+    "name": "S8 MaxV Ultra Robot Vacuum & Sonic Mop, 10000 Pa Suction, Corner to Edge Deep Cleaning, Hot Air Self-Drying, Auto Empty & Refill, Detergent Dispenser, Obstacle Avoidance, Black",
+    "price": null,
+    "no_of_ratings": "5.0 out of 5 stars",
+    "offers": null
+}{
+    "name": "Robot Vacuum and Mop Combo, WiFi/App/Alexa, 2 in 1 Robot Vacuums Cleaner with Tangle-Free Cyclone Suction, Scheduled Cleaning, Automatic Recharge Robotic Vacuum Cleaner for Pet Hair, Low Carpet",
+    "price": "$169.99",
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": "Limited time deal"
+}{
+    "name": "DEEBOT T20 Omni Robot Vacuum and Mop,Hot Water Mop Washing,Auto Hot Air-Drying,9mm AutoMop Lifting,Dual Spinning Mops,Self-Emptying,6000Pa Suction,Obstacle Avoidance,YIKO Voice Assistant,White",
+    "price": "$649.99",
+    "no_of_ratings": "3.8 out of 5 stars",
+    "offers": "Limited time deal"
+}{
+    "name": "Roomba 692 Robot Vacuum - Wi-Fi Connectivity, Personalized Cleaning Recommendations, Works with Alexa, Good for Pet Hair, Carpets, Hard Floors, Self-Charging",
+    "price": "$292.55",
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": null
+}{
+    "name": "Robot Vacuum and Mop Combo,Q6 Pro Robot Vacuum Cleaner with Self-Emptying,4000pa Max Suction Laser Navigator Robotic Vacuum with Smart Mapping,250 Mins Run-Time,App Control,Ideal for Pet Hair",
+    "price": "$469.99",
+    "no_of_ratings": "4.7 out of 5 stars",
+    "offers": null
+}{
+    "name": "S7 Max Ultra Robot Vacuum and Mop Combo, Auto Mop Drying/ Washing, Self-Emptying, Self-Refilling, 5500Pa Suction, Reactive Tech Obstacle Avoidance, Black (RockDock Ultra Series)",
+    "price": null,
+    "no_of_ratings": "4.3 out of 5 stars",
+    "offers": null
+}{
+    "name": "DEEBOT N10 PLUS Robot Vacuum and Mop Combo with Auto-Empty Station, Hands-Free Cleaning for 60 Days, 3800Pa Suction, 330mins Max Run-time, Precision Mapping with Lidar & dToF Sensors, White",
+    "price": "$349.99",
+    "no_of_ratings": "4.0 out of 5 stars",
+    "offers": "Limited time deal"
+}{
+    "name": "Robot Vacuum and Mop Combo,Q6 SE Robot Vacuum Cleaner with Self-Emptying,3500pa Max Suction Laser Navigator Robotic Vacuum with Smart Mapping,180 Mins Run-Time,App Control,Ideal for Pet Hair",
+    "price": "$399.00",
+    "no_of_ratings": "4.6 out of 5 stars",
+    "offers": null
+}{
+    "name": "12 Packs Vacuum Dust Bags for Roborock S8+ / S8 Pro Ultra / S7 MaxV Ultra / S7 Pro Ultra / Q7+ / Q7 Max+ / Q5+ Clean Base Automatic Dirt Disposal Bags, 3L Large Capacity",
+    "price": "$25.99",
+    "no_of_ratings": "4.7 out of 5 stars",
+    "offers": null
+}{
+    "name": "Roomba 694 Robot Vacuum-Wi-Fi Connectivity, Personalized Cleaning Recommendations, Works with Alexa, Good for Pet Hair, Carpets, Hard Floors, Self-Charging, Roomba 694",
+    "price": null,
+    "no_of_ratings": "4.2 out of 5 stars",
+    "offers": "Best Seller"
+}{
+    "name": "Robot Vacuum and Mop, L8000 Laser LiDAR Navigation Robotic Vacuum, 3000Pa Suction, 150Mins Max, 45dB, 14 No-Go Zones, 20 Virtual Walls, Self-Charging, Good for Pet Hair, Carpet, Hard Floor",
+    "price": "$199.99",
+    "no_of_ratings": "4.9 out of 5 stars",
+    "offers": null
+}
