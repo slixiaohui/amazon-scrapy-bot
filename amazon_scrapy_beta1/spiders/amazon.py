@@ -48,7 +48,7 @@ class AmazonSpider(scrapy.Spider):
                 url=next_url,
                 headers=self.headers,
                 callback=self.parse,
-                meta={"keyword": self.q, "page": 1},
+                # meta={"keyword": self.q, "page": 1},
             )
 
         for product in products:
@@ -72,8 +72,9 @@ class AmazonSpider(scrapy.Spider):
                 url=product_detail_url,
                 callback=self.parse_product_detail,
                 headers=self.headers,
-                meta={"keyword": self.q, "page": 1},
+                # meta={"keyword": self.q, "page": 1},
             )
 
     def parse_product_detail(self, response):
+        # print(response.text)
         pass
