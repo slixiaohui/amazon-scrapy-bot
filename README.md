@@ -12,7 +12,8 @@
 - 促销活动
 - 商详页链接
 1. 通过`PostgreSQLPipeline`将商品项写入到了PostgreSQL中，数据库中的数据如下
-<img width="1384" alt="image" src="https://github.com/slixiaohui/amazon-scrapy-bot/assets/81063796/2cc0f7db-b2ce-4d58-8d6e-4befdd09ff27">
+
+<img width="2032" alt="image" src="https://github.com/slixiaohui/amazon-scrapy-bot/assets/81063796/98782fbf-0b76-4370-80f9-f82eb46d624c">
 
 2. 查询关键词得出的首页html在`search_result.txt`
 3. 根据首页爬取的商品信息在`search_result_items.txt`
