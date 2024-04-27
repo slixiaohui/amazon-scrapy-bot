@@ -2,10 +2,20 @@
 一个爬取亚马逊商品的爬虫，基于scrapy
 
 ## 结果样例
+商品项包含：
+- asin
+- 商品名称
+- 价格
+- 价格单位（$）
+- 评分
+- reviews数量
+- 促销活动
+- 商详页链接
+1. 通过`PostgreSQLPipeline`将商品项写入到了PostgreSQL中，数据库中的数据如下
 <img width="1384" alt="image" src="https://github.com/slixiaohui/amazon-scrapy-bot/assets/81063796/2cc0f7db-b2ce-4d58-8d6e-4befdd09ff27">
 
-1. 查询关键词得出的首页html在`search_result.txt`
-2. 根据首页爬取的商品信息在`search_result_items.txt`
+2. 查询关键词得出的首页html在`search_result.txt`
+3. 根据首页爬取的商品信息在`search_result_items.txt`
 
 ## 待完善
 - [ ] 反爬虫机制
