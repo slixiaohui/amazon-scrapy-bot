@@ -2,6 +2,8 @@
 一个爬取亚马逊商品的爬虫，基于scrapy
 
 ## 结果样例
+<img width="1384" alt="image" src="https://github.com/slixiaohui/amazon-scrapy-bot/assets/81063796/2cc0f7db-b2ce-4d58-8d6e-4befdd09ff27">
+
 1. 查询关键词得出的首页html在`search_result.txt`
 2. 根据首页爬取的商品信息在`search_result_items.txt`
 
