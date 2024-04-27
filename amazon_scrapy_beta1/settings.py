@@ -69,6 +69,7 @@ COOKIES_DEBUG = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     "amazon_scrapy_beta1.pipelines.AmazonScrapyBeta1Pipeline": 300,
+    "amazon_scrapy_beta1.pipelines.PostgreSQLPipeline": 100,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -106,9 +107,27 @@ DOWNLOADER_MIDDLEWARES = {
     "amazon_scrapy_beta1.middlewares.RetryMiddleware": 550,
     "scrapy_fake_useragent.middleware.RandomUserAgentMiddleware": 400,
     "scrapy_fake_useragent.middleware.RetryUserAgentMiddleware": 401,
+    "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 1,
 }
+
+
+DATABASE_SETTINGS = {
+    "dbname": "postgres",
+    "user": "postgres",
+    "password": "ts123456",
+    "host": "localhost",
+    "port": "5432",
+}
+
+
+# 配置代理服务器地址和端口
+HTTP_PROXY = "http://127.0.0.1:8080"
+
 FAKEUSERAGENT_PROVIDERS = [
     "scrapy_fake_useragent.providers.FakeUserAgentProvider",  # This is the first provider we'll try
     "scrapy_fake_useragent.providers.FakerProvider",  # If FakeUserAgentProvider fails, we'll use faker to generate a user-agent string for us
     "scrapy_fake_useragent.providers.FixedUserAgentProvider",  # Fall back to USER_AGENT value
 ]
+
+
+# jdbc:postgresql://localhost:5432/postgres

@@ -1,6 +1,7 @@
 import scrapy
 from scrapy import Request
 from amazon_scrapy_beta1.items import ProductItem
+import re
 
 
 class AmazonSpider(scrapy.Spider):
@@ -37,18 +38,18 @@ class AmazonSpider(scrapy.Spider):
 
     def parse(self, response):
         products = response.css(
+            # "div.s-result-item[data-uuid][data-asin][data-index]"
             "div.s-result-item[data-component-type=s-search-result]"
         )
-        next_page = response.css(
-            "a.s-pagination-next::attr(href)"
-        ).get()  # search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.s-wide-grid-style.sg-row > div.sg-col-20-of-24.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span.rush-component.s-latency-cf-section > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(33) > div > div > span > a.s-pagination-item.s-pagination-next.s-pagination-button.s-pagination-separator
+        # print(products)
+        next_page = response.css("a.s-pagination-next::attr(href)").get()
+        # search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.s-wide-grid-style.sg-row > div.sg-col-20-of-24.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span.rush-component.s-latency-cf-section > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(33) > div > div > span > a.s-pagination-item.s-pagination-next.s-pagination-button.s-pagination-separator
         if next_page:
             next_url = self.base_url + next_page
             yield Request(
                 url=next_url,
                 headers=self.headers,
                 callback=self.parse,
-                # meta={"keyword": self.q, "page": 1},
             )
 
         for product in products:
@@ -56,24 +57,41 @@ class AmazonSpider(scrapy.Spider):
             product_detail_url = self.base_url + relative_url
 
             item = ProductItem()
-            name = product.css("h2>a>span::text").get()
-            price = product.css("span.a-offscreen::text").get()
+            name = re.sub("'|\n", "", product.css("h2>a>span::text").get())
+            asin = product.css("div[data-asin]::attr(data-asin)").get()
+            n_ratings = product.css(
+                'span[data-component-type="s-client-side-analytics"]>div>span>a>span::text'
+            ).get()
+            # print(n_ratings)
+            price = re.sub(
+                "\$|,",
+                "",
+                (
+                    product.css("span.a-offscreen::text").get()
+                    if product.css("span.a-offscreen::text").get()
+                    else "0"
+                ),
+            )
             no_of_ratings = product.css(
                 "div.a-section.a-spacing-none.a-spacing-top-micro>div>span::attr(aria-label)"
             ).get()
             offers = product.css(".a-badge-text::text").get()
+
+            item["asin"] = asin
             item["name"] = name
-            item["price"] = price
+            item["price"] = float(price)
             item["no_of_ratings"] = no_of_ratings
+            item["n_ratings"] = n_ratings
             item["offers"] = offers
+            item["product_detail_url"] = product_detail_url
             yield item
 
-            yield scrapy.Request(
-                url=product_detail_url,
-                callback=self.parse_product_detail,
-                headers=self.headers,
-                # meta={"keyword": self.q, "page": 1},
-            )
+            # yield scrapy.Request(
+            #     url=product_detail_url,
+            #     callback=self.parse_product_detail,
+            #     headers=self.headers,
+            #     # meta={"keyword": self.q, "page": 1},
+            # )
 
     def parse_product_detail(self, response):
         # print(response.text)

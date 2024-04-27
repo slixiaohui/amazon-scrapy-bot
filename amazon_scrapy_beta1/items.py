@@ -13,7 +13,10 @@ class AmazonScrapyBeta1Item(scrapy.Item):
 
 
 class ProductItem(scrapy.Item):
+    asin = scrapy.Field()
     name = scrapy.Field()
     price = scrapy.Field()
     no_of_ratings = scrapy.Field()
+    n_ratings = scrapy.Field()
     offers = scrapy.Field()
+    product_detail_url = scrapy.Field()
